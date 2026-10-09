@@ -1,4 +1,5 @@
 body{
+    
 background-color:rgb(255, 255, 255);
 }
 h1{
@@ -33,5 +34,48 @@ p{
   border: 2px solid;
   padding: 10px;
   border-radius: 20px;
+
+}
+.container{
+    display: flex;
+    background-color:aliceblue;
+    border-radius: 15px;
+    border: 2px solid;
+    justify-content: space-around;
+    
+
+}
+.container div{
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(128, 133, 131);
+    border: 2px solid;
+    
+}
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "menu content";
+    grid-template-columns: 1fr 2fr;
+    border: 2px;
+    gap: 3px;
+ 
+  padding: 5px;
+
+}
+.grid div.header{
+    grid-area: header;
+    text-align: center;
+    
+
+}
+.grid div.menu{
+    grid-area: menu;
+
+}
+.grid div.content{
+    grid-area: content;
 
 }
